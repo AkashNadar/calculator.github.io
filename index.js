@@ -20,103 +20,96 @@ const dot = document.getElementById('.');
 
 var exp = "";
 
-
-
-plus.onclick = () => {
+plus.addEventListener('click', () =>{
     exp = exp + '+';
     display.innerHTML = exp;
+})
 
-};
-
-minus.onclick = () => {
+minus.addEventListener('click', () =>{
     exp = exp + '-';
     display.innerHTML = exp;
+});
 
-};
-
-mul.onclick = () => {
+mul.addEventListener('click', () =>{
     exp = exp + '*';
     display.innerHTML = exp;
+});
 
-};
-
-div.onclick = () => {
+div.addEventListener('click', () =>{
     exp = exp + '/';
     display.innerHTML = exp;
+});
 
-};
-
-equals.onclick = () => {
+equals.addEventListener('click', () =>{
     exp = eval(exp).toString();
     display.innerHTML = exp;
-};
+});
 
-clear.onclick = () => {
+equals.addEventListener('click', () =>{});
+clear.addEventListener('click', () =>{
     exp = "";
     display.innerHTML = "0";
-};
-
-one.onclick = () => {
-    exp = exp + '1';
-    display.innerHTML = exp;
-    
-};
-
-two.onclick = () => {
-    exp = exp + '2';
-    display.innerHTML = exp;
-    
-};
-
-three.onclick = () => {
-    exp = exp + '3';
-    display.innerHTML = exp;
-    
-};
-
-four.onclick = () => {
-    exp = exp + '4';
-    display.innerHTML = exp;
-    
-};
-
-five.onclick = () => {
-    exp = exp + '5';
-    display.innerHTML = exp;
-    
-};
-
-six.onclick = () => {
-    exp = exp + '6';
-    display.innerHTML = exp;
-    
-};
-
-seven.onclick = () => {
-    exp = exp + '7';
-    display.innerHTML = exp;
-    
-};
-
-eight.onclick = () => {
-    exp = exp + '8';
-    display.innerHTML = exp;
-    
-};
-
-nine.onclick = () => {
-    exp = exp + '9';
-    display.innerHTML = exp;
-};
-
-zero.onclick = () => {
+});
+zero.addEventListener('click', () =>{
     exp = exp + '0';
     display.innerHTML = exp;
-    
-};
+});
 
-dot.onclick = () => {
+one.addEventListener('click', () =>{
+    exp = exp + '1';
+    display.innerHTML = exp;
+});
+
+
+two.addEventListener('click', () =>{
+    exp = exp + '2';
+    display.innerHTML = exp;
+});
+
+
+three.addEventListener('click', () =>{
+    exp = exp + '3';
+    display.innerHTML = exp;
+});
+
+
+four.addEventListener('click', () =>{
+    exp = exp + '4';
+    display.innerHTML = exp;
+});
+
+
+five.addEventListener('click', () =>{
+    exp = exp + '5';
+    display.innerHTML = exp;
+});
+
+
+six.addEventListener('click', () =>{
+    exp = exp + '6';
+    display.innerHTML = exp;
+});
+
+
+seven.addEventListener('click', () =>{
+    exp = exp + '7';
+    display.innerHTML = exp;
+});
+
+
+eight.addEventListener('click', () =>{
+    exp = exp + '8';
+    display.innerHTML = exp;
+});
+
+
+nine.addEventListener('click', () =>{
+    exp = exp + '9';
+    display.innerHTML = exp;
+});
+
+
+dot.addEventListener('click', () =>{
     exp = exp + '.';
     display.innerHTML = exp;
-    
-};
+});
